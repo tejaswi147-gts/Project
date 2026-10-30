@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriMind AI: Weather & Disease Prediction</title>
+    <meta name="description" content="AI-powered agricultural companion predicting crop diseases and preventive precautions based on real-time microclimate and weather conditions." />
+    <meta property="og:title" content="AgriMind AI: Weather & Disease Prediction" />
+    <meta property="og:description" content="AI-powered agricultural companion predicting crop diseases and preventive precautions based on real-time microclimate and weather conditions." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+    <div id="root"></div>
+
+    <!-- Google Translate Container element in DOM -->
+    <div id="google_translate_element" style="display:none"></div>
+
+    <!-- Google Translate Script with South Indian Languages (Telugu, Tamil, Kannada, Malayalam, Hindi) -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        try {
+          var container = document.getElementById('google_translate_element');
+          if (container && window.google && window.google.translate && window.google.translate.TranslateElement) {
+            new window.google.translate.TranslateElement({
+              pageLanguage: 'en',
+              includedLanguages: 'en,te,ta,kn,ml,hi,es,fr,pt,bn,mr,pa,vi,ar,sw',
+              layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false
+            }, 'google_translate_element');
+          }
+        } catch (e) {
+          console.warn('Google Translate initialization handled safely:', e);
+        }
+      }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

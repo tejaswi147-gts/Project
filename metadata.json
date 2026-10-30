@@ -1,0 +1,6 @@
+{
+  "name": "AgriMind AI: Weather & Disease Prediction",
+  "description": "AI-powered agricultural companion predicting crop diseases and preventive precautions based on real-time microclimate and weather conditions.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
